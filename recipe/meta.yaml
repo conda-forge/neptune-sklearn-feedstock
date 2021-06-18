@@ -1,5 +1,5 @@
 {% set name = "neptune-sklearn" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/neptune-ai/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 9d1511ea1c5889628dc678832154fc125ce37c82f417da546fb3718a14f446de
+  sha256: c56c4d3041f99100301ee07214443909e6434eec9460f5909d9c183793f23deb
 
 build:
   noarch: python
