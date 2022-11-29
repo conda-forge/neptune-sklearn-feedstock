@@ -32,6 +32,10 @@ test:
   imports:
     - neptune_sklearn
     - neptune_sklearn.impl
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://neptune.ai/
