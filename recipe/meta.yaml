@@ -1,13 +1,14 @@
 {% set name = "neptune-sklearn" %}
-{% set version = "0.9.6" %}
+{% set package_name = "neptune_sklearn" %}
+{% set version = "0.9.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/neptune-ai/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 250755408b6a7a78e5ddb3c206a12cc8fbc7608e4ef502678bbc5169fd22312f
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
+  sha256: 2635224b27b0e3fdb8361ecd3a3c88eb68c471cad77212c39ab2feb072673682
 
 build:
   noarch: python
@@ -18,6 +19,8 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - poetry-core >=1.0.0
+    - poetry-dynamic-versioning
   run:
     - neptune-client >=0.9
     - python >=3.6
@@ -29,6 +32,10 @@ test:
   imports:
     - neptune_sklearn
     - neptune_sklearn.impl
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://neptune.ai/
@@ -44,6 +51,8 @@ extra:
     - aniezurawski
     - HubertJaworski
     - pitercl
-    - PiotrJander
     - shnela
-    - pkasprzyk
+    - twolodzko
+    - AleksanderWWW
+    - PatrykGala
+    - Raalsky
