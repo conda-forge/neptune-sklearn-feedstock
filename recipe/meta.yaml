@@ -1,6 +1,6 @@
 {% set name = "neptune-sklearn" %}
 {% set package_name = "neptune_sklearn" %}
-{% set version = "0.9.7" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ package_name }}-{{ version }}.tar.gz
-  sha256: 2635224b27b0e3fdb8361ecd3a3c88eb68c471cad77212c39ab2feb072673682
+  sha256: 6f7b499af49cff4fd011f0644421b667fde794ff2a0fdb4ccde9d9abe234175c
 
 build:
   noarch: python
