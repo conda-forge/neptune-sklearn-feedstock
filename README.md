@@ -1,11 +1,11 @@
-About neptune-sklearn
-=====================
+About neptune-sklearn-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neptune-sklearn-feedstock/blob/main/LICENSE.txt)
 
 Home: https://neptune.ai/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neptune-sklearn-feedstock/blob/main/LICENSE.txt)
 
 Summary: Neptune Client integration with Scikit-Learn
 
